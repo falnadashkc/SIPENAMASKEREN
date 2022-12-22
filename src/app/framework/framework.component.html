@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <a href="/" class="navbar-brand">SIPENAMAS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
+      aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarMain" class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a routerLink="about" routerLinkActive="active" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="pengabdian" routerLinkActive="active" class="nav-link">Pengabdian</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="penelitian" routerLinkActive="active" class="nav-link">Penelitian</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container content">
+  <router-outlet></router-outlet>
+  <footer>
+    <div class="row">
+      <div class="col-12">
+        <small>&copy; 2022 - PAW II SI5A</small>
+      </div>
+    </div>
+  </footer>
+</div>

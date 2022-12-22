@@ -1,0 +1,41 @@
+<div class="container px-5 my-5">
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <div class="mb-3">
+            <label class="form-label" for="judul">Judul</label>
+            <input class="form-control" id="judul" type="text" placeholder="Judul" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="judul:required">Judul is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="jurnalPublikasi">Jurnal Publikasi</label>
+            <input class="form-control" id="jurnalPublikasi" type="text" placeholder="Jurnal Publikasi" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="jurnalPublikasi:required">Jurnal Publikasi is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="dosen">Dosen</label>
+            <select class="form-select" id="dosen" aria-label="Dosen">
+                <option value="Radit">Radit</option>
+                <option value="Wilsen">Wilsen</option>
+                <option value="Dzaka">Dzaka</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="deskripsi">Deskripsi</label>
+            <textarea class="form-control" id="deskripsi" type="text" placeholder="Deskripsi" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="deskripsi:required">Deskripsi is required.</div>
+        </div>
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                <p>To activate this form, sign up at</p>
+                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+            </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Simpan</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
