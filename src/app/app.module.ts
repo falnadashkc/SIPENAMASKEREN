@@ -15,6 +15,8 @@ import { PageHeaderComponent } from './page-header/page-header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PenelitianDetailsComponent } from './penelitian-details/penelitian-details.component';
 import { PengabdianDetailsComponent } from './pengabdian-details/pengabdian-details.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -28,32 +30,41 @@ import { PengabdianDetailsComponent } from './pengabdian-details/pengabdian-deta
     PageHeaderComponent,
     SidebarComponent,
     PenelitianDetailsComponent,
-    PengabdianDetailsComponent
+    PengabdianDetailsComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
       {
         path: '',
-        component : AppComponent,
+        component: AppComponent,
       },
       {
         path: 'about',
-        component : AboutComponent,
+        component: AboutComponent,
       },
       {
         path: 'pengabdian',
-        component : PengabdianComponent,
+        component: PengabdianComponent,
       },
       {
         path: 'penelitian',
-        component : PenelitianComponent,
+        component: PenelitianComponent,
       },
       {
         path: 'penelitian/:penelitianId',
-        component : DetailsPageComponent,
+        component: DetailsPageComponent,
+      }
+        path: 'login',
+      component: LoginComponent,
+      {
+        path: 'register',
+        component: RegisterComponent,
       }
     ])
   ],
